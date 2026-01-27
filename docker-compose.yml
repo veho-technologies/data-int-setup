@@ -1,0 +1,11 @@
+services:
+  dbt:
+    build: .
+    volumes:
+      # Mount project directory for live editing
+      - .:/app
+      # Persist sqlite database
+      - ./sqlite:/app/sqlite
+    working_dir: /app
+    stdin_open: true
+    tty: true

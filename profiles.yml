@@ -1,0 +1,16 @@
+interview:
+  target: local
+  outputs:
+    local:
+      type: sqlite
+      threads: 1
+      database: "database"
+      schema: main
+      schemas_and_paths:
+        main: "sqlite/interview.db"
+        main_seeds: "sqlite/interview.db"
+        main_sources: "sqlite/interview.db"
+        main_staging: "sqlite/interview.db"
+        main_intermediate: "sqlite/interview.db"
+        main_mart: "sqlite/interview.db"
+      schema_directory: "sqlite"

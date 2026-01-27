@@ -1,0 +1,28 @@
+version: 2
+
+sources:
+  - name: packages
+    description: "Packages source data"
+    schema: main_seeds
+    tables:
+      - name: packages
+        description: "Packages source data (200 records)"
+        columns:
+          - name: height
+            description: "Package height"
+          - name: length
+            description: "Package length"
+          - name: width
+            description: "Package width"
+          - name: weight
+            description: "Package weight"
+          - name: orderId
+            description: "Order identifier"
+          - name: scheduledServiceDate
+            description: "Scheduled service date"
+          - name: slaServiceDate
+            description: "SLA service date"
+          - name: expiresAt
+            description: "Expiration date"
+          - name: perishable
+            description: "Whether the package is perishable"

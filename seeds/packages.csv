@@ -1,0 +1,2 @@
+packageId,facilityId,lastEvent,clientId,height,length,width,weight,orderId,scheduledServiceDate,slaServiceDate,expiresAt,perishable
+PKG_01KBTGQQAGTH9V9T1M40HEJDXE,b9rAtjY7fiDZMnjTpKMNqx,delivered,9iRSxP7dimLpej3H5,null,null,null,4,ORD_01KBTGQQAEGWNNNBV6NHHKFJ9M,null,2025-12-08T05:59:59.999Z,null,false

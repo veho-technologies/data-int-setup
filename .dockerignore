@@ -1,0 +1,36 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.pyc
+
+# dbt
+target/
+dbt_packages/
+logs/
+.user.yml
+
+# SQLite (will be mounted as volume)
+sqlite/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Documentation
+README.md
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
