@@ -55,7 +55,7 @@ If you shared your github handle and were temporarily invited as a collaborator,
 
 3. **Authenticate with GitHub**
 
-- When prompted, log in with your GitHub username and password.
+- When prompted, use your GitHub username and a personal access token (GitHub no longer accepts account passwords for Git over HTTPS).
 
 ---
 

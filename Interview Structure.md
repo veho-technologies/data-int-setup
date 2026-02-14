@@ -17,7 +17,7 @@ Accessing the Private Interview Repository
 
 About 15 minutes before the interview, you should receive an email with an SSH private key and a link to a private GitHub repository. The key is a GitHub ed25519 deploy key, unique to you and our interview repo. Configured appropriately on your machine, it will temporarily allow you to clone the repo. There are instructions for key setup and cloning in [How to Clone the Repo](./How%20To%20Clone%20the%20Repo.md). 
 
-If you respond to this email with a GitHub handle you’d like us to use, we will instead invite you as a collaborator on the interview GitHub repo. 
+If you provide your Veho contact with a GitHub handle you’d like us to use, we will instead invite you as a collaborator on the interview GitHub repo. 
 
 Interview Format:
 
