@@ -4,7 +4,7 @@ dbt_packages/
 logs/
 .user.yml
 
-#sqlite (we're going with seed files for now
+# sqlite (we're going with seed files for now)
 sqlite/*.db
 
 # Python

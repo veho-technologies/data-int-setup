@@ -4,7 +4,26 @@ This project uses dbt (data build tool) with SQLite for data transformation.
 
 ## Quick Start (Recommended - ~2 minutes)
 
-### Option 1: Docker (Most isolated - no additional dependencies installed)
+### Option 1: Local Setup in a virtual environment. (Fastest setup)
+
+If you prefer to run without docker, make alone should get you what you need:
+
+```bash
+# Check and install dependencies
+make check-deps  # Will show what's missing
+
+# Bootstrap the project
+make init
+
+# Activate the virtual environment
+source .venv/bin/activate
+
+# Now you can use dbt directly
+dbt run
+dbt test
+```
+
+### Option 2: Docker (Most isolated)
 
 **Check if you already have Docker installed:**
 
@@ -49,25 +68,6 @@ make clean
 dbt run
 ```
 
-### Option 2: Local Setup (Makefile)
-
-If you prefer to run without docker, make alone should get you what you need:
-
-```bash
-# Check and install dependencies
-make check-deps  # Will show what's missing
-
-# Bootstrap the project
-make init
-
-# Activate the virtual environment
-source .venv/bin/activate
-
-# Now you can use dbt directly
-dbt run
-dbt test
-```
-
 ---
 
 ## Typical Workflow
@@ -92,10 +92,10 @@ dbt test                       # Run tests
 make init
 
 # Regular development
-source .venv/bin/activate     # activate the venv
-make clean                    # Reset database and reload seeds (or: bin/start.sh)
-dbt run                       # Run your dbt models
-dbt run --select <model_name> # Run specific model
+source .venv/bin/activate      # activate the venv
+make clean                     # Reset database and reload seeds (or: bin/start.sh)
+dbt run                        # Run your dbt models
+dbt run --select <model_name>  # Run specific model
 dbt test                       # Run tests
 
 # Note: make run, make test, etc. also work if you prefer
