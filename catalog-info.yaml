@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: data-int-setup
+  description: Setup scripts for the dbtoy repo - dbt (data build tool) with SQLite for data transformation
+  annotations:
+    github.com/project-slug: veho-technologies/data-int-setup
+  tags:
+    - dbt
+    - data-transformation
+    - sqlite
+    - shell
+    - docker
+    - data-engineering
+  links:
+    - url: https://github.com/veho-technologies/data-int-setup
+      title: Repository
+      icon: github
+spec:
+  type: library
+  lifecycle: experimental
+  owner: developer-platform
